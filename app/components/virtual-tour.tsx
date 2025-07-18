@@ -218,36 +218,47 @@ function Environment360({ currentLocation }: { currentLocation: string }) {
 // Main Virtual Tour component
 export function VirtualTour() {
   const images = [
-    { src: "/images/hero-bg.jpg", label: "Main Entrance" },
-    { src: "/placeholder.jpg", label: "Cardio Zone" },
-    { src: "/placeholder.jpg", label: "Weight Training Area" },
-    { src: "/placeholder.jpg", label: "Group Fitness Studio" },
-    { src: "/placeholder.jpg", label: "Functional Training" },
-    { src: "/placeholder.jpg", label: "Recovery Lounge" },
-    { src: "/placeholder.jpg", label: "Locker Rooms" },
+    { src: "/rcfit1.jpg", label: "RC Fit 1" },
+    { src: "/rcfit2.jpg", label: "RC Fit 2" },
+    { src: "/rcfit3.jpg", label: "RC Fit 3" },
+    { src: "/rcfit4.jpg", label: "RC Fit 4" },
+    { src: "/rcfit5.jpg", label: "RC Fit 5" },
+    { src: "/rcfit6.jpg", label: "RC Fit 6" },
+    { src: "/rcfit7.jpg", label: "RC Fit 7" },
+    { src: "/rcfit8.jpg", label: "RC Fit 8" },
   ]
   const [current, setCurrent] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
+
+  useEffect(() => {
+    if (isHovered) return
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [images.length, isHovered])
 
   const goPrev = () => setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1))
   const goNext = () => setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1))
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div
+      className="w-full flex flex-col items-center -mt-8"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Image display, bezel-less */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={images[current].src}
         alt={images[current].label}
-        className="w-full h-72 sm:h-96 lg:h-[24rem] object-cover object-center select-none"
+        className="w-full h-96 lg:h-[32rem] object-cover object-center select-none rounded-sm"
         draggable="false"
         style={{ border: 0, boxShadow: "none", padding: 0, margin: 0 }}
       />
       {/* Label overlay */}
-      <div className="w-full text-center text-lg font-semibold text-white mt-2 mb-4">
-        {images[current].label}
-      </div>
       {/* Mini nav: arrows and dots */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 mt-6">
         <button
           onClick={goPrev}
           aria-label="Previous"
