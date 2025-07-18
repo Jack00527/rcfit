@@ -86,8 +86,8 @@ export default function GymWebsite() {
     },
     {
       icon: <Clock className="h-8 w-8 text-red-400" />,
-      title: "24/7 Access",
-      description: "Train on your schedule with round-the-clock facility access",
+      title: "2 Branches",
+      description: "Now open at 2 convenient locations for you.",
     },
     {
       icon: <Award className="h-8 w-8 text-red-400" />,
@@ -271,10 +271,10 @@ export default function GymWebsite() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-gray-600 text-lg px-8 flex-1 min-w-0 bg-transparent hover:bg-blue-600/20 hover:text-blue-400 flex items-center transition-colors"
+                    className="border-gray-600 text-lg px-8 flex-1 min-w-0 bg-transparent hover:bg-red-600/40 hover:text-red-400 flex items-center transition-colors"
                   >
                     <Play className="h-5 w-5 mr-2" />
-                    Watch Tour
+                    <span className="z-10 text-white">Watch Tour</span>
                   </Button>
                 }
               />
@@ -286,8 +286,8 @@ export default function GymWebsite() {
                 <div className="text-sm text-gray-400">Active Members</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500">24/7</div>
-                <div className="text-sm text-gray-400">Access</div>
+                <div className="text-3xl font-bold text-red-500">2</div>
+                <div className="text-sm text-gray-400">Branches</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-red-500">15+</div>
@@ -483,7 +483,16 @@ export default function GymWebsite() {
               <span className="text-xl font-bold mt-2 md:mt-0">RC Fitness</span>
             </div>
             {/* Center: Address */}
-            <span className="text-gray-400 text-center mb-2 md:mb-0 block">Pandu Restcamp, Guwahati, 781012</span>
+            <div className="flex flex-col items-center mb-2 md:mb-0">
+              <div className="flex items-center text-gray-400">
+                <MapPin className="h-5 w-5 mr-2 text-red-500" />
+                Pandu Restcamp, Guwahati, 781012
+              </div>
+              <div className="flex items-center text-gray-400 mt-1">
+                <MapPin className="h-5 w-5 mr-2 text-red-500" />
+                Zoo Tiniali, Guwahati, 781024
+              </div>
+            </div>
             {/* Right: Phone number and Social icons */}
             <div className="flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
               <span className="text-gray-400">+91 7002434440</span>
