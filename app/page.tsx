@@ -258,7 +258,7 @@ export default function GymWebsite() {
             <div className="flex flex-row gap-4 w-full max-w-full">
               <Button
                 size="lg"
-                className="bg-red-600 hover:bg-red-700 text-lg px-8 w-full sm:w-auto sm:flex-none"
+                className="bg-red-600 hover:bg-red-700 text-lg px-8 flex-1 min-w-0"
               >
                 <span className="block sm:hidden">Join Us</span>
                 <span className="hidden sm:block">Start Your Journey</span>
