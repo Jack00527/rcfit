@@ -490,7 +490,7 @@ export default function GymWebsite() {
               </div>
               <div className="flex items-center text-gray-400 mt-1">
                 <MapPin className="h-5 w-5 mr-2 text-red-500" />
-                No. Gate, Maligaon 1, opposite railway higher secondary school, Assam 781011
+                Opposite railway higher secondary school, Maligaon Gate No. 1, Guwahati, Assam 781011
               </div>
             </div>
             {/* Right: Phone number and Social icons */}
