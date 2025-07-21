@@ -486,11 +486,11 @@ export default function GymWebsite() {
             <div className="flex flex-col items-center mb-2 md:mb-0">
               <div className="flex items-center text-gray-400">
                 <MapPin className="h-5 w-5 mr-2 text-red-500" />
-                Pandu Restcamp, Guwahati, 781012
+                opp. Railway Co-op Store, Kamakhya Colony, Bara Bazar, Pandu, Guwahati, Assam 781012
               </div>
               <div className="flex items-center text-gray-400 mt-1">
                 <MapPin className="h-5 w-5 mr-2 text-red-500" />
-                Zoo Tiniali, Guwahati, 781024
+                No. Gate, Maligaon 1, opposite railway higher secondary school, Assam 781011
               </div>
             </div>
             {/* Right: Phone number and Social icons */}
