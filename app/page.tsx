@@ -141,21 +141,21 @@ export default function GymWebsite() {
 
   const reviews = [
     {
-      name: "Sarah Johnson",
+      name: "Mriganka Kumar Baishya",
       rating: 5,
-      comment: "Amazing facility with top-notch equipment. The trainers are incredibly knowledgeable and supportive!",
+      comment: "Very polite behaviour from all the staffs. Trainers are very good. All equipments available. Owner is very humble",
       image: "/placeholder.svg?height=60&width=60",
     },
     {
-      name: "Mike Chen",
+      name: "Mike Kankan Das",
       rating: 5,
-      comment: "Best gym I've ever been to. Clean, modern, and the 24/7 access is perfect for my schedule.",
+      comment: "Professional instructors, perfect working equipments and the perfect environment to pump your muscles and relieve stress.. Highly recommended!",
       image: "/placeholder.svg?height=60&width=60",
     },
     {
-      name: "Emily Davis",
+      name: "Rina Banik",
       rating: 5,
-      comment: "The group classes are fantastic! Great community and excellent results in just 3 months.",
+      comment: "Good experiencing with this gym, good environment, tainer assist very well ...i definitely recommend this one",
       image: "/placeholder.svg?height=60&width=60",
     },
   ]
